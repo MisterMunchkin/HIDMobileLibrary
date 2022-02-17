@@ -5,7 +5,7 @@ public class HIDMobileLibraryModule: Module {
     name("HIDMobileLibrary")
 
     function("helloAsync") { (options: [String: String]) in
-      print("Hello 👋")
+      return "Hello 👋";
     }
 
     viewManager {

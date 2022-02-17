@@ -1,6 +1,6 @@
 {
   "name": "expo-hid-mobile-wrapper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An SDK wrapper for HID Mobile that works on expo (only bare workflows for now).",
   "main": "build/HIDMobileLibrary.js",
   "types": "build/HIDMobileLibrary.d.ts",
@@ -19,6 +19,7 @@
     "Expo-Native-Modules",
     "HIDMobileLibrary"
   ],
+  "homepage": "https://github.com/MisterMunchkin/HIDMobileLibrary#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MisterMunchkin/HIDMobileLibrary.git"
@@ -26,7 +27,6 @@
   "bugs": {
     "url": "https://github.com/MisterMunchkin/HIDMobileLibrary/issues"
   },
-  "homepage": "#readme",
   "author": "Robin Tubungbanua",
   "license": "MIT",
   "dependencies": {

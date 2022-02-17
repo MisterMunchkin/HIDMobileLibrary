@@ -8,7 +8,7 @@ class HIDMobileLibraryModule : Module() {
     name("HIDMobileLibrary")
 
     function("helloAsync") { options: Map<String, String> ->
-      println("Hello 👋")
+      return "Hello 👋";
     }
 
     viewManager {
