@@ -1,7 +1,7 @@
 {
-  "name": "hid-mobile-sdk-wrapper",
+  "name": "expo-hid-mobile-wrapper",
   "version": "0.1.0",
-  "description": "An SDK Wrapper for HID Mobile",
+  "description": "An SDK wrapper for HID Mobile that works on expo (only bare workflows for now).",
   "main": "build/HIDMobileLibrary.js",
   "types": "build/HIDMobileLibrary.d.ts",
   "scripts": {
@@ -19,18 +19,23 @@
     "Expo-Native-Modules",
     "HIDMobileLibrary"
   ],
-  "repository": "",
-  "bugs": {
-    "url": "/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterMunchkin/HIDMobileLibrary.git"
   },
+  "bugs": {
+    "url": "https://github.com/MisterMunchkin/HIDMobileLibrary/issues"
+  },
+  "homepage": "#readme",
   "author": "Robin Tubungbanua",
   "license": "MIT",
-  "homepage": "#readme",
   "dependencies": {
     "expo-modules-core": "^0.6.5"
   },
   "devDependencies": {
-    "expo-module-scripts": "^2.0.0"
+    "eslint": "^7.32.0",
+    "expo-module-scripts": "^2.0.0",
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
     "expo": "*"

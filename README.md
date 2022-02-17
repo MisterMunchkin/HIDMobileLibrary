@@ -1,6 +1,8 @@
-# hid-mobile-sdk-wrapper
+# expo-hid-mobile-wrapper
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
-An SDK Wrapper for HID Mobile
+An SDK wrapper for HID Mobile that works on expo (only bare workflows for now).
+HID mobile allows an individuals mobile device as access control 🔐.
 
 # API documentation
 
@@ -18,7 +20,7 @@ For bare React Native projects, you must ensure that you have [installed and con
 ### Add the package to your npm dependencies
 
 ```
-npm install hid-mobile-sdk-wrapper
+npm install expo-hid-mobile-wrapper
 ```
 
 ### Configure for iOS
