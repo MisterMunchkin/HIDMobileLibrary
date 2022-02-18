@@ -27,10 +27,21 @@
   "bugs": {
     "url": "https://github.com/MisterMunchkin/HIDMobileLibrary/issues"
   },
+  "jest": {
+    "preset": "expo-module-scripts/universal"
+  },
   "author": "Robin Tubungbanua",
   "license": "MIT",
   "dependencies": {
-    "expo-modules-core": "^0.6.5"
+    "@react-native-community/cli": "2.10.0",
+    "@react-native-community/cli-platform-android": "2.9.0",
+    "@react-native-community/cli-platform-ios": "2.9.0",
+    "expo": "^44.0.6",
+    "expo-modules-autolinking": "^0.5.5",
+    "expo-modules-core": "^0.6.5",
+    "react": "17.0.2",
+    "react-native": "0.63.4",
+    "react-native-unimodules": "^0.14.10"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

@@ -5,6 +5,7 @@ public class HIDMobileLibraryModule: Module {
     name("HIDMobileLibrary")
 
     function("helloAsync") { (options: [String: String]) in
+        HIDMobileLibraryModule
       return "Hello 👋";
     }
 
@@ -18,4 +19,6 @@ public class HIDMobileLibraryModule: Module {
       }
     }
   }
+
+  
 }

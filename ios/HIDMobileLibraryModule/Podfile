@@ -1,0 +1,32 @@
+
+require File.join(File.dirname(`node --print "require.resolve('react-native/package.json')"`), "scripts/react_native_pods")
+require File.join(File.dirname(`node --print "require.resolve('react-native-unimodules/package.json')"`), "cocoapods.rb")
+require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
+
+require_relative '../../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'HIDMobileLibraryModule' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_expo_modules!
+  config = use_expo_modules!
+  # use_react_native!(:path => config[:reactNativePath])
+
+  # Pods for HIDMobileLibraryModule
+  pod 'React-Core', :path => '../../node_modules/react-native/'
+  # pod 'React-Core/DevSupport', :path => '../../node_modules/react-native/'
+  # pod 'React-Core/RCTWebSocket', :path => '../../node_modules/react-native'
+
+  pod 'DoubleConversion', :podspec => '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'Folly', :podspec => '../../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  
+  pod 'React-callinvoker', :podspec => '../../node_modules/react-native/ReactCommon/callinvoker'
+  pod 'React-cxxreact', :path => '../../node_modules/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '../../node_modules/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '../../node_modules/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '../../node_modules/react-native/ReactCommon/jsinspector'
+  pod 'Yoga', :path => '../../node_modules/react-native/ReactCommon/yoga'
+  pod 'ReactCommon/turbomodule/core', :path => '../../node_modules/react-native/ReactCommon'
+end
