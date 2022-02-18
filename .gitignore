@@ -1,2 +1,8 @@
 /node_modules
 /ios/HIDMobileLibraryModule/Pods
+/ios/HIDMobileLibraryModule/.DS_Store
+/ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcworkspace/xcuserdata/robindalmy.xcuserdatad/UserInterfaceState.xcuserstate
+/ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcodeproj/project.pbxproj
+/ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcworkspace/contents.xcworkspacedata
+/ios/HIDMobileLibraryModule/Origo_Keys_iOS_SDK
+/ios/.DS_Store

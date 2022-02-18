@@ -12,6 +12,9 @@
 		517324EF27BFEB9F00F87905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517324EE27BFEB9F00F87905 /* ContentView.swift */; };
 		517324F127BFEBA100F87905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517324F027BFEBA100F87905 /* Assets.xcassets */; };
 		517324F427BFEBA100F87905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517324F327BFEBA100F87905 /* Preview Assets.xcassets */; };
+		517324FE27BFFDBE00F87905 /* HIDMobileLibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517324FC27BFFDBE00F87905 /* HIDMobileLibraryModule.swift */; };
+		517324FF27BFFDBE00F87905 /* HIDMobileLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517324FD27BFFDBE00F87905 /* HIDMobileLibraryView.swift */; };
+		5173250127C00F8900F87905 /* OrigoSDKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173250027C00F8900F87905 /* OrigoSDKController.swift */; };
 		B12F5642C33F6804429BA7FF /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF331595EE00E9E0DBAC4DE /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		517324EE27BFEB9F00F87905 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		517324F027BFEBA100F87905 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		517324F327BFEBA100F87905 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		517324FC27BFFDBE00F87905 /* HIDMobileLibraryModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HIDMobileLibraryModule.swift; path = ../../HIDMobileLibraryModule.swift; sourceTree = "<group>"; };
+		517324FD27BFFDBE00F87905 /* HIDMobileLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HIDMobileLibraryView.swift; path = ../../HIDMobileLibraryView.swift; sourceTree = "<group>"; };
+		5173250027C00F8900F87905 /* OrigoSDKController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrigoSDKController.swift; sourceTree = "<group>"; };
 		6296D4237996268BA1471C40 /* libPods-HIDMobileLibraryModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HIDMobileLibraryModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF331595EE00E9E0DBAC4DE /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-HIDMobileLibraryModule/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,7 +51,6 @@
 				057236B44587CB681BB5D963 /* Pods-HIDMobileLibraryModule.debug.xcconfig */,
 				3E127AF8B902EB710CAB23B6 /* Pods-HIDMobileLibraryModule.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,8 +84,11 @@
 		517324EB27BFEB9F00F87905 /* HIDMobileLibraryModule */ = {
 			isa = PBXGroup;
 			children = (
+				517324FC27BFFDBE00F87905 /* HIDMobileLibraryModule.swift */,
+				517324FD27BFFDBE00F87905 /* HIDMobileLibraryView.swift */,
 				517324EC27BFEB9F00F87905 /* HIDMobileLibraryModuleApp.swift */,
 				517324EE27BFEB9F00F87905 /* ContentView.swift */,
+				5173250027C00F8900F87905 /* OrigoSDKController.swift */,
 				517324F027BFEBA100F87905 /* Assets.xcassets */,
 				517324F227BFEBA100F87905 /* Preview Content */,
 			);
@@ -123,6 +131,7 @@
 				517324E627BFEB9F00F87905 /* Frameworks */,
 				517324E727BFEB9F00F87905 /* Resources */,
 				43DECFB17892E03B88B906DD /* [CP] Copy Pods Resources */,
+				203DA2FE2B472364C4F4D691 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +188,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		203DA2FE2B472364C4F4D691 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D286D40CC7648284599869F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +254,9 @@
 				517324EF27BFEB9F00F87905 /* ContentView.swift in Sources */,
 				517324ED27BFEB9F00F87905 /* HIDMobileLibraryModuleApp.swift in Sources */,
 				B12F5642C33F6804429BA7FF /* ExpoModulesProvider.swift in Sources */,
+				5173250127C00F8900F87905 /* OrigoSDKController.swift in Sources */,
+				517324FE27BFFDBE00F87905 /* HIDMobileLibraryModule.swift in Sources */,
+				517324FF27BFFDBE00F87905 /* HIDMobileLibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +396,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,6 +427,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

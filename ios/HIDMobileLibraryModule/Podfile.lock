@@ -1,5 +1,9 @@
 PODS:
+  - BerTlv (0.2.5)
   - boost-for-react-native (1.63.0)
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
   - DoubleConversion (1.1.6)
   - EXApplication (4.0.2):
     - ExpoModulesCore
@@ -34,6 +38,18 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.4)
+  - JSONModel (1.8.0)
+  - Mixpanel (4.1.3)
+  - OrigoSDK-Debug (1.7.6):
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
+  - OrigoSDK-Release (1.7.6):
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
   - React-callinvoker (0.63.4)
   - React-Core (0.63.4):
     - Folly (= 2020.01.13.00)
@@ -83,6 +99,16 @@ PODS:
     - React-Core (= 0.63.4)
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
+  - SeosMobileKeysSDK-Debug (7.6.9):
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
+  - SeosMobileKeysSDK-Release (7.6.9):
+    - BerTlv
+    - CocoaLumberjack
+    - JSONModel
+    - Mixpanel
   - UMAppLoader (2.2.0)
   - UMCore (7.1.2)
   - UMReactNativeAdapter (6.3.9):
@@ -105,6 +131,8 @@ DEPENDENCIES:
   - Expo (from `../../node_modules/expo/ios`)
   - ExpoModulesCore (from `../../node_modules/expo-modules-core/ios`)
   - Folly (from `../../node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - OrigoSDK-Debug (from `Origo_Keys_iOS_SDK/Debug/OrigoSDK-Debug.podspec`)
+  - OrigoSDK-Release (from `Origo_Keys_iOS_SDK/Release/OrigoSDK-Release.podspec`)
   - React-callinvoker (from `../../node_modules/react-native/ReactCommon/callinvoker`)
   - React-Core (from `../../node_modules/react-native/`)
   - React-cxxreact (from `../../node_modules/react-native/ReactCommon/cxxreact`)
@@ -112,6 +140,8 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../../node_modules/react-native/ReactCommon/jsinspector`)
   - ReactCommon/turbomodule/core (from `../../node_modules/react-native/ReactCommon`)
+  - SeosMobileKeysSDK-Debug (from `Origo_Keys_iOS_SDK/Debug/SeosMobileKeysSDK-Debug.podspec`)
+  - SeosMobileKeysSDK-Release (from `Origo_Keys_iOS_SDK/Release/SeosMobileKeysSDK-Release.podspec`)
   - UMAppLoader (from `../../node_modules/unimodules-app-loader/ios`)
   - "UMCore (from `../../node_modules/@unimodules/core/ios`)"
   - "UMReactNativeAdapter (from `../../node_modules/@unimodules/react-native-adapter/ios`)"
@@ -120,8 +150,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BerTlv
     - boost-for-react-native
+    - CocoaLumberjack
     - glog
+    - JSONModel
+    - Mixpanel
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -146,6 +180,10 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/expo-modules-core/ios"
   Folly:
     :podspec: "../../node_modules/react-native/third-party-podspecs/Folly.podspec"
+  OrigoSDK-Debug:
+    :path: Origo_Keys_iOS_SDK/Debug/OrigoSDK-Debug.podspec
+  OrigoSDK-Release:
+    :path: Origo_Keys_iOS_SDK/Release/OrigoSDK-Release.podspec
   React-callinvoker:
     :podspec: "../../node_modules/react-native/ReactCommon/callinvoker"
   React-Core:
@@ -160,6 +198,10 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/react-native/ReactCommon/jsinspector"
   ReactCommon:
     :path: "../../node_modules/react-native/ReactCommon"
+  SeosMobileKeysSDK-Debug:
+    :path: Origo_Keys_iOS_SDK/Debug/SeosMobileKeysSDK-Debug.podspec
+  SeosMobileKeysSDK-Release:
+    :path: Origo_Keys_iOS_SDK/Release/SeosMobileKeysSDK-Release.podspec
   UMAppLoader:
     :path: "../../node_modules/unimodules-app-loader/ios"
   UMCore:
@@ -172,7 +214,9 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  BerTlv: c94b89a7b93bf8c1881691a8d105ec87a4a10759
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   DoubleConversion: cde416483dac037923206447da6e1454df403714
   EXApplication: 54fe5bd6268d697771645e8f1aef8b806a65247a
   EXConstants: 4cb52b6d8f636c767104a44bf7db3873e9c01a6f
@@ -185,6 +229,10 @@ SPEC CHECKSUMS:
   ExpoModulesCore: 32c0ccb47f477d330ee93db72505380adf0de09a
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Mixpanel: e1946068db90518aa5abc05deb63176c109b7e00
+  OrigoSDK-Debug: 2ad0864d4d1e03d1886aee3a60a28f6b1a930422
+  OrigoSDK-Release: 726efb05f68a09dcf05da3e5b300d920e714d09a
   React-callinvoker: c3f44dd3cb195b6aa46621fff95ded79d59043fe
   React-Core: d3b2a1ac9a2c13c3bcde712d9281fc1c8a5b315b
   React-cxxreact: c1480d4fda5720086c90df537ee7d285d4c57ac3
@@ -192,12 +240,14 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
+  SeosMobileKeysSDK-Debug: 3df31c135e857898dafbac1ed878d8b51fe03f4f
+  SeosMobileKeysSDK-Release: ff21a9bf9e033fd3a8afaf55c7ef289b844026ad
   UMAppLoader: 21af63390e55c82e037fb9752d93114a80ecf16e
   UMCore: ce3a4faa010239063b8343895b29a6d97b01069d
   UMReactNativeAdapter: d03cefd0e4e4179ab8c490408589f1c8a6c8b785
   UMTaskManagerInterface: 2be431101b73604e64fbfffcf759336f9d8fccbb
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: 7c35e3c59349fdc342714618a163e7d3bcbdf4c5
+PODFILE CHECKSUM: 407296a44b6aa8dc87a52844c682073ff96f50f0
 
 COCOAPODS: 1.11.2
