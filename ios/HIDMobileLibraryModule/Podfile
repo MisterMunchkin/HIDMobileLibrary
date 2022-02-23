@@ -10,6 +10,7 @@ platform :ios, '12.0'
 
 # use_frameworks!
 
+#This came from HIDMobile SDK Pods install sample
 project 'HIDMobileLibraryModule', {
   'Debug' => :debug,
   'Release' => :release,
@@ -21,6 +22,7 @@ def applibs
   pod 'SeosMobileKeysSDK-Debug', :configuration => ['Debug'], :path  => 'Origo_Keys_iOS_SDK/Debug/SeosMobileKeysSDK-Debug.podspec'
   pod 'SeosMobileKeysSDK-Release', :configuration => ['Release'], :path  => 'Origo_Keys_iOS_SDK/Release/SeosMobileKeysSDK-Release.podspec'
 end
+#End of HIDMobile SDK Pods install sample
 
 target 'HIDMobileLibraryModule' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -36,25 +38,49 @@ target 'HIDMobileLibraryModule' do
   applibs
 
   # Pods for HIDMobileLibraryModule
-  pod 'React-Core', :path => '../../node_modules/react-native/'
-  # pod 'React-Core/DevSupport', :path => '../../node_modules/react-native/'
-  # pod 'React-Core/RCTWebSocket', :path => '../../node_modules/react-native'
+  #pod 'React-Core', :path => '../../node_modules/react-native/'
+  pod 'FBLazyVector', :path => "../../node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../../node_modules/react-native/React/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../../node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../../node_modules/react-native/Libraries/TypeSafety"
 
-  pod 'DoubleConversion', :podspec => '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  pod 'Folly', :podspec => '../../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  #React
+  pod 'React', :path => '../../node_modules/react-native/'
+  pod 'React-Core', :path => '../../node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../../node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../../node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '../../node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '../../node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '../../node_modules/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '../../node_modules/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '../../node_modules/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '../../node_modules/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '../../node_modules/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '../../node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '../../node_modules/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '../../node_modules/react-native/'
   
-  pod 'React-callinvoker', :podspec => '../../node_modules/react-native/ReactCommon/callinvoker'
   pod 'React-cxxreact', :path => '../../node_modules/react-native/ReactCommon/cxxreact'
   pod 'React-jsi', :path => '../../node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../../node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'Yoga', :path => '../../node_modules/react-native/ReactCommon/yoga'
+  pod 'React-callinvoker', :path => '../../node_modules/react-native/ReactCommon/callinvoker'
   pod 'ReactCommon/turbomodule/core', :path => '../../node_modules/react-native/ReactCommon'
+  pod 'Yoga', :path => '../../node_modules/react-native/ReactCommon/yoga'
+
+  #podspecs
+  pod 'DoubleConversion', :podspec => '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'RCT-Folly', :podspec => '../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec'
+
+  #Perf Logger for CallInvoker
+  pod 'React-perflogger', :path => '../../node_modules/react-native/ReactCommon/reactperflogger'
+  pod 'React-runtimeexecutor', :path => '../../node_modules/react-native/ReactCommon/runtimeexecutor'
 end
 
 
 ##############################
-##Pre and Post install hooks##
+##Pre and Post install hooks## This came from HIDMobile SDK Pods install sample
 ##############################
 post_install do |installer|
   require 'fileutils'

@@ -1,7 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+apply from: new File(["node", "--print", "require.resolve('react-native-unimodules/package.json')"].execute(null, rootDir).text.trim(), "../gradle.groovy")
+apply from: new File(["node", "--print", "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim(), "../react.gradle")
+apply from: new File(["node", "--print", "require.resolve('expo-updates/package.json')"].execute(null, rootDir).text.trim(), "../scripts/create-manifest-android.gradle")
+
+apply from: new File(["node", "--print", "require.resolve('@react-native-community/cli-platform-android/package.json')"].execute(null, rootDir).text.trim(), "../native_modules.gradle");
+applyNativeModulesAppBuildGradle(project)
 
 group = 'com.cardexchangesolutions.hidmobilelibrary'
 version = '0.1.0'
@@ -13,14 +19,14 @@ buildscript {
   }
 
   repositories {
-    google()
-    jcenter()
     mavenCentral()
+    google()
+   // jcenter()
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:4.0.0'
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.4.21')}")
+    classpath("com.android.tools.build:gradle:7.3.0-alpha02")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.6.10')}")
   }
 }
 
@@ -40,11 +46,10 @@ artifacts {
   archives androidSourcesJar
 }
 
-uploadArchives {
+publishing {
   repositories {
-    mavenDeployer {
-      configuration = configurations.deployerJars
-      repository(url: mavenLocal().url)
+    maven {
+      url = uri("${rootProject.projectDir}/maven-repo")
     }
   }
 }
@@ -59,6 +64,10 @@ android {
   
   kotlinOptions {
     jvmTarget = JavaVersion.VERSION_1_8
+  }
+
+  buildFeatures {
+    viewBinding true
   }
 
   defaultConfig {
@@ -78,5 +87,6 @@ repositories {
 
 dependencies {
   implementation project(':expo-modules-core')
-  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${safeExtGet('kotlinVersion', '1.4.21')}"
+  implementation "com.android.tools.build:gradle:7.3.0-alpha02"
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${safeExtGet('kotlinVersion', '1.6.10')}"
 }
