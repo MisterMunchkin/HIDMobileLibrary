@@ -18,6 +18,8 @@ buildscript {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
   }
 
+  //ext.react.cliPath = '../node_modules/react-native/cli.js'
+
   repositories {
     mavenCentral()
     google()

@@ -1,8 +1,8 @@
 /node_modules
 /ios/HIDMobileLibraryModule/Pods
 /ios/HIDMobileLibraryModule/.DS_Store
-/ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcworkspace/
-/ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcodeproj/
+# /ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcworkspace/
+# /ios/HIDMobileLibraryModule/HIDMobileLibraryModule.xcodeproj/
 /ios/HIDMobileLibraryModule/Origo_Keys_iOS_SDK
 /ios/.DS_Store
 .DS_Store

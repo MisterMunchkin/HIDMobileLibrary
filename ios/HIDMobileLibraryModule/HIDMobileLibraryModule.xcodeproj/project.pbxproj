@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5130150227C69EBF00F4EA0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5130150127C69EBF00F4EA0F /* AppDelegate.swift */; };
+		5130150427C69EBF00F4EA0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5130150327C69EBF00F4EA0F /* SceneDelegate.swift */; };
+		5130150627C69EBF00F4EA0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5130150527C69EBF00F4EA0F /* ContentView.swift */; };
+		5130150827C69EC000F4EA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5130150727C69EC000F4EA0F /* Assets.xcassets */; };
+		5130150B27C69EC000F4EA0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5130150A27C69EC000F4EA0F /* Preview Assets.xcassets */; };
+		5130150E27C69EC000F4EA0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5130150C27C69EC000F4EA0F /* LaunchScreen.storyboard */; };
+		5130151627C69FCD00F4EA0F /* OrigoSDKController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5130151527C69FCD00F4EA0F /* OrigoSDKController.swift */; };
+		8067B3677572879CD8E3D5AA /* libPods-HIDMobileLibraryModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8FC7609CD58CCE65AF4D0D /* libPods-HIDMobileLibraryModule.a */; };
+		EFAFB2D05B8853F90EC5FEB2 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99D00AB159370A1E57E3D27 /* ExpoModulesProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		117F2CC4F7C640E6B81639E1 /* Pods-HIDMobileLibraryModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIDMobileLibraryModule.release.xcconfig"; path = "Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule.release.xcconfig"; sourceTree = "<group>"; };
+		513014FE27C69EBF00F4EA0F /* HIDMobileLibraryModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIDMobileLibraryModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5130150127C69EBF00F4EA0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5130150327C69EBF00F4EA0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5130150527C69EBF00F4EA0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5130150727C69EC000F4EA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5130150A27C69EC000F4EA0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5130150D27C69EC000F4EA0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5130150F27C69EC000F4EA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5130151527C69FCD00F4EA0F /* OrigoSDKController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrigoSDKController.swift; sourceTree = "<group>"; };
+		67A051717E272358188674A7 /* Pods-HIDMobileLibraryModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIDMobileLibraryModule.debug.xcconfig"; path = "Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule.debug.xcconfig"; sourceTree = "<group>"; };
+		A99D00AB159370A1E57E3D27 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-HIDMobileLibraryModule/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FE8FC7609CD58CCE65AF4D0D /* libPods-HIDMobileLibraryModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HIDMobileLibraryModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		513014FB27C69EBF00F4EA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8067B3677572879CD8E3D5AA /* libPods-HIDMobileLibraryModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D10C6A9A1C72DD44861C04E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67A051717E272358188674A7 /* Pods-HIDMobileLibraryModule.debug.xcconfig */,
+				117F2CC4F7C640E6B81639E1 /* Pods-HIDMobileLibraryModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3B2CD5059650F2C59AE9B276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8FC7609CD58CCE65AF4D0D /* libPods-HIDMobileLibraryModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		513014F527C69EBF00F4EA0F = {
+			isa = PBXGroup;
+			children = (
+				5130150027C69EBF00F4EA0F /* HIDMobileLibraryModule */,
+				513014FF27C69EBF00F4EA0F /* Products */,
+				0D10C6A9A1C72DD44861C04E /* Pods */,
+				3B2CD5059650F2C59AE9B276 /* Frameworks */,
+				523928975292759EBF75EF07 /* ExpoModulesProviders */,
+			);
+			sourceTree = "<group>";
+		};
+		513014FF27C69EBF00F4EA0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				513014FE27C69EBF00F4EA0F /* HIDMobileLibraryModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5130150027C69EBF00F4EA0F /* HIDMobileLibraryModule */ = {
+			isa = PBXGroup;
+			children = (
+				5130151527C69FCD00F4EA0F /* OrigoSDKController.swift */,
+				5130150127C69EBF00F4EA0F /* AppDelegate.swift */,
+				5130150327C69EBF00F4EA0F /* SceneDelegate.swift */,
+				5130150527C69EBF00F4EA0F /* ContentView.swift */,
+				5130150727C69EC000F4EA0F /* Assets.xcassets */,
+				5130150C27C69EC000F4EA0F /* LaunchScreen.storyboard */,
+				5130150F27C69EC000F4EA0F /* Info.plist */,
+				5130150927C69EC000F4EA0F /* Preview Content */,
+			);
+			path = HIDMobileLibraryModule;
+			sourceTree = "<group>";
+		};
+		5130150927C69EC000F4EA0F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5130150A27C69EC000F4EA0F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		523928975292759EBF75EF07 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				FC5B987CC4EAD3122C7FDB1A /* HIDMobileLibraryModule */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		FC5B987CC4EAD3122C7FDB1A /* HIDMobileLibraryModule */ = {
+			isa = PBXGroup;
+			children = (
+				A99D00AB159370A1E57E3D27 /* ExpoModulesProvider.swift */,
+			);
+			name = HIDMobileLibraryModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		513014FD27C69EBF00F4EA0F /* HIDMobileLibraryModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5130151227C69EC000F4EA0F /* Build configuration list for PBXNativeTarget "HIDMobileLibraryModule" */;
+			buildPhases = (
+				80A6C6357626EC670797ABD4 /* [CP] Check Pods Manifest.lock */,
+				513014FA27C69EBF00F4EA0F /* Sources */,
+				513014FB27C69EBF00F4EA0F /* Frameworks */,
+				513014FC27C69EBF00F4EA0F /* Resources */,
+				8A542A172E516692701B1591 /* [CP] Embed Pods Frameworks */,
+				01950E9A896F1BD887EBB3FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HIDMobileLibraryModule;
+			productName = HIDMobileLibraryModule;
+			productReference = 513014FE27C69EBF00F4EA0F /* HIDMobileLibraryModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		513014F627C69EBF00F4EA0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					513014FD27C69EBF00F4EA0F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 513014F927C69EBF00F4EA0F /* Build configuration list for PBXProject "HIDMobileLibraryModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 513014F527C69EBF00F4EA0F;
+			productRefGroup = 513014FF27C69EBF00F4EA0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				513014FD27C69EBF00F4EA0F /* HIDMobileLibraryModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		513014FC27C69EBF00F4EA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130150E27C69EC000F4EA0F /* LaunchScreen.storyboard in Resources */,
+				5130150B27C69EC000F4EA0F /* Preview Assets.xcassets in Resources */,
+				5130150827C69EC000F4EA0F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01950E9A896F1BD887EBB3FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A6C6357626EC670797ABD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HIDMobileLibraryModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A542A172E516692701B1591 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HIDMobileLibraryModule/Pods-HIDMobileLibraryModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		513014FA27C69EBF00F4EA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5130150227C69EBF00F4EA0F /* AppDelegate.swift in Sources */,
+				5130150427C69EBF00F4EA0F /* SceneDelegate.swift in Sources */,
+				5130151627C69FCD00F4EA0F /* OrigoSDKController.swift in Sources */,
+				5130150627C69EBF00F4EA0F /* ContentView.swift in Sources */,
+				EFAFB2D05B8853F90EC5FEB2 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5130150C27C69EC000F4EA0F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5130150D27C69EC000F4EA0F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5130151027C69EC000F4EA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5130151127C69EC000F4EA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5130151327C69EC000F4EA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A051717E272358188674A7 /* Pods-HIDMobileLibraryModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HIDMobileLibraryModule/Preview Content\"";
+				DEVELOPMENT_TEAM = M2ZSK9JJBS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HIDMobileLibraryModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robindalmy.HIDMobileLibraryModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5130151427C69EC000F4EA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117F2CC4F7C640E6B81639E1 /* Pods-HIDMobileLibraryModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HIDMobileLibraryModule/Preview Content\"";
+				DEVELOPMENT_TEAM = M2ZSK9JJBS;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HIDMobileLibraryModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robindalmy.HIDMobileLibraryModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		513014F927C69EBF00F4EA0F /* Build configuration list for PBXProject "HIDMobileLibraryModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130151027C69EC000F4EA0F /* Debug */,
+				5130151127C69EC000F4EA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5130151227C69EC000F4EA0F /* Build configuration list for PBXNativeTarget "HIDMobileLibraryModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5130151327C69EC000F4EA0F /* Debug */,
+				5130151427C69EC000F4EA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 513014F627C69EBF00F4EA0F /* Project object */;
+}

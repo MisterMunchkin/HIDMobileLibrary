@@ -6,7 +6,7 @@ require File.join(File.dirname(`node --print "require.resolve('expo/package.json
 require_relative '../../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 # Uncomment the next line to define a global platform for your project
-platform :ios, '12.0'
+platform :ios, '12.1'
 
 # use_frameworks!
 
@@ -69,12 +69,14 @@ target 'HIDMobileLibraryModule' do
   pod 'Yoga', :path => '../../node_modules/react-native/ReactCommon/yoga'
 
   #podspecs
+  pod 'boost', :podspec => '../../node_modules/react-native/third-party-podspecs/boost.podspec'
   pod 'DoubleConversion', :podspec => '../../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'RCT-Folly', :podspec => '../../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec'
 
   #Perf Logger for CallInvoker
   pod 'React-perflogger', :path => '../../node_modules/react-native/ReactCommon/reactperflogger'
+  pod 'React-logger', :path => '../../node_modules/react-native/ReactCommon/logger'
   pod 'React-runtimeexecutor', :path => '../../node_modules/react-native/ReactCommon/runtimeexecutor'
 end
 
