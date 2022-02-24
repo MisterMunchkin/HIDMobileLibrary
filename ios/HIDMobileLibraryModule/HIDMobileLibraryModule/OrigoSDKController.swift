@@ -1,28 +1,27 @@
 //
-//  OrigoSDK.swift
+//  OrigoSDKController.swift
 //  HIDMobileLibraryModule
 //
-//  Created by Robin Dalmy Tubungbanua on 2/19/22.
+//  Created by Robin Dalmy Tubungbanua on 2/24/22.
 //
 
 import Foundation
-import OrigoSDK
+//import OrigoSDK
 
-class OrigoSDKController: NSObject, OrigoKeysManagerDelegate {
-    func origoKeysDidStartup() {
-        <#code#>
-    }
+class OrigoSDKController: NSObject {
+ //   func origoKeysDidStartup() {
+        //tbc
+   // }
 
     func origoKeysDidFail(toStartup error: Error) {
-        <#code#>
+        //tbc
     }
 
     func origoKeysDidSetupEndpoint() {
-        <#code#>
+        //tbc
     }
 
     func origoKeysDidFail(toSetupEndpoint error: Error) {
-        <#code#>
+        //tbc
     }
 }
-

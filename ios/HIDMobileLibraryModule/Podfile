@@ -28,6 +28,7 @@ target 'HIDMobileLibraryModule' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_expo_modules!
   config = use_expo_modules!
+  #use_frameworks!
   # use_react_native!(:path => config[:reactNativePath])
 
   #######################
